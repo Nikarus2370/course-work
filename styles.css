@@ -1,0 +1,39 @@
+* {
+	font-size: 20px;
+}
+
+body {
+	margin: auto;
+}
+
+div.page {
+	width: 900px;
+	margin: 0 auto;
+}
+
+div.header {
+	background-color: #2A5979;
+	height: 150px;
+}
+
+div.sidebar {
+	background-color: #6592B0;
+	float: left;
+	height: 650px;
+	width: 200px;'
+	text-align: center;
+}
+
+div.content {
+	background-color: #EBDBB1;
+	float: left;
+	height: 650px;
+	width: 700px;
+	text-align: center;
+}
+
+div.footer {
+	background-color: #2A5979;
+	clear: both;
+	height: 150px;
+}
