@@ -1,0 +1,23 @@
+.myText {
+  text-align : center; 
+}
+
+.myOuter {
+  height : 200px;
+  width : 400px;
+  background-color : #76A0D0;
+  border-radius : 100px;
+  border : 5px solid #2161A9;
+  margin : auto;
+}
+
+.mySwitch {
+  height : 150px;
+  width : 150px;
+  background-color : white;
+  alignment : left-align;
+  border-radius : 75px;
+  margin-top : 25px;
+  margin-left : 25px;  
+}
+
