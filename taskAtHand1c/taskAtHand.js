@@ -33,17 +33,21 @@ function TaskAtHandApp()
 		$("span.task-name", $task).text(taskName);
 		
 		$("#task-list").append($task);
+		saveTaskList();
 		
 		$("button.delete", $task).click(function() {
 			removeTask($task);
+			saveTaskList();
 		});
 				 
 		$("button.move-up", $task).click(function() {
 			moveTask($task, true);
+			saveTaskList();
 		});
 		
 		$("button.move-down", $task).click(function() {
 			moveTask($task, false);
+			saveTaskList();
 		});
 		
 		$("span.task-name", $task).click(function(){
