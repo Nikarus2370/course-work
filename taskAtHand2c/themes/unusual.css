@@ -1,0 +1,41 @@
+ #app
+{
+    background-color: #bbc;
+    background: -webkit-linear-gradient(top, #bbc, #558);
+    background: -moz-linear-gradient(top, #bbc, #558);
+    background: -ms-linear-gradient(top, #bbc, #558);
+    background: linear-gradient(top, #bbc, #558);
+}
+#app>header,
+#app>footer
+{
+    background-color: #006;
+}
+
+#new-task-name 
+{
+	-webkit-transform: rotateY(180deg); 
+    transform: rotateY(180deg);
+}
+
+#task-list
+{
+	-webkit-transform: rotateX(45deg); 
+    transform: rotateX(45deg);
+	-webkit-transform: rotateY(45deg); 
+    transform: rotateY(45deg);
+	-webkit-transform: rotateZ(45deg); 
+    transform: rotateZ(45deg);
+}
+
+#task-list .task
+{
+	box-shadow: 10px 10px;
+	text-shadow: 1px 1px;
+}
+
+#task-list .task:hover .tools,
+#task-list .task.selected .tools
+{
+	box-shadow: -10px -10px;
+}

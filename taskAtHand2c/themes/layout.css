@@ -1,0 +1,46 @@
+#app
+{
+    background-color: #bbc;
+    background: -webkit-linear-gradient(top, #bbc, #558);
+    background: -moz-linear-gradient(top, #bbc, #558);
+    background: -ms-linear-gradient(top, #bbc, #558);
+    background: linear-gradient(top, #bbc, #558);
+}
+#app>header,
+#app>footer
+{
+    background-color: #006;
+}
+
+#task-list .task
+{
+	display: inline-block;
+	width: 40%;
+	padding: .5% 2.5%;
+	margin: .5% 2.5%;
+}
+
+#task-list .task.selected
+{
+	width: 90%;
+	padding: 1% 2.5%;
+	margin: 1% 2.5%;
+	border: none;
+	border-radius: 6px;
+	background-color: white;
+}
+
+#main {
+	margin: 1em;
+	max-width: 60em;
+	min-width: 20em;
+	background-color: #666;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+#task-list .task .tools
+{
+	position: absolute;
+	top: 5%;
+	right: 5%;
