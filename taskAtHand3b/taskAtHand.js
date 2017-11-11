@@ -3,14 +3,19 @@
 // using a function contructor form to create an object
 function TaskAtHandApp()
 {
-	var version = "v3.2";
+	var version = "v3.3";
 	var appStorage = new AppStorage("taskAtHand");
 	var taskList = new TaskList();
+	var timeoutId = 0;
 
 	// creating a private function
-	function setStatus(message)
+	function setStatus(message, noFade)
 	{
-		$("#app>footer").text(message);
+		$("#app>footer").text(message).show();
+		if(!noFade)
+		{
+			$("#app>footer").fadeOut(1000);
+		}
 	}
 
 	// creating a public function
@@ -73,7 +78,7 @@ function TaskAtHandApp()
 			var fieldName = $input.data("field");
 			$input.val(task[fieldName]);
 		});
-		$("details input, .details select", $task).change(function() {
+		$(".details input, .details select", $task).change(function() {
 			onChangeTaskDetails(task.id, $(this));
 		});
 	}
@@ -148,7 +153,13 @@ function TaskAtHandApp()
 	
 	function saveTaskList()
 	{
-		appStorage.setValue("taskList", taskList.getTasks());
+		if (timeoutId) clearTimeout(timeoutId);
+		setStatus("saving changes...", true);
+		timeoutId = setTimeout(function(){
+			appStorage.setValue("taskList", taskList.getTasks());
+			timeoutId = 0;
+			setStatus("changes saved.");
+		}, 2000);
 	}
 	
 	function loadTaskList()
