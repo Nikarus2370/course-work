@@ -42,7 +42,7 @@ function TaskList(tasks)
 		if (i >= 0)
 		{
 			var task = tasks[i];
-			tasls.splice(i,1);
+			tasks.splice(i,1);
 			return task;
 		}
 		return null;

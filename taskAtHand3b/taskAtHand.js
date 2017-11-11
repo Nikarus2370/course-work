@@ -43,7 +43,7 @@ function TaskAtHandApp()
 		saveTaskList();
 		
 		$("button.delete", $task).click(function() {
-			removeTask($task);
+			removeTask($task, task.id);
 			saveTaskList();
 		});
 				 
@@ -113,8 +113,10 @@ function TaskAtHandApp()
 		saveTaskList();
 	}
 	
-	function removeTask($task){
+	function removeTask($task,id){
+		console.log(id);
 		$task.remove();
+		taskList.removeTask(id);
 		saveTaskList();
 	}
 	
