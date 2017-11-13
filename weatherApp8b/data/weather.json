@@ -1,0 +1,13 @@
+{
+    "location": {
+		"city":"Concord"
+    }
+	,"current_observation": {
+		"weather":"Partly cloudy with scattered showers",
+		"temperature_string":"38 F (3 C)",
+		"wind_string":"From the SSE at 15.0 MPH Gusting to 30.0 MPH",
+		"feelslike_string":"38 F (3 C)",
+        "relative_humidity":"91%",
+		"icon_url":"images/nt_clear.gif"
+	}
+}
