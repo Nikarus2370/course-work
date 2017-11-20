@@ -18,6 +18,10 @@ function WeatherWidget($widget)
 		});
 	} 
 	
+	function showError(errorThrown){
+		console.log(errorThrown);
+	}
+	
 	function populateWeather(data)
 	{
 		var observation = data.current_observation;
