@@ -14,13 +14,10 @@ function WeatherWidget($widget)
 		})
 		.done(function(data) {populateWeather(data); })
 		.fail(function(jqXHR, textStatus, errorThrown) {
-			showError(errorThrown);
+			//showError(errorThrown);
 		});
 	} 
-	
-	function showError(errorThrown){
-		console.log(errorThrown);
-	}
+
 	
 	function populateWeather(data)
 	{
