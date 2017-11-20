@@ -14,7 +14,6 @@ function WeatherWidget($widget)
 		})
 		.done(function(data) {populateWeather(data); })
 		.fail(function(jqXHR, textStatus, errorThrown) {
-			//showError(errorThrown);
 		});
 	} 
 
