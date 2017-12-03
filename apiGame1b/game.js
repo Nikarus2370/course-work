@@ -97,7 +97,7 @@ function Game()
 		cardBNumber = CardNumber(cardB);
 		cardBSuit = CardSuit(cardB);
 		$("#cards").append("<img id='cardB'></img>");
-		$("#cardB").attr("src", "/images/CardBack.png");
+		$("#cardB").attr("src", "images/CardBack.png");
 		remainingCards--;
 		$("#highLowButtons").append("<button id='high'>HIGHER</button>")
 		$("#high").click(function() {
@@ -165,7 +165,7 @@ function Game()
 		cardBNumber = CardNumber(cardB);
 		cardBSuit = CardSuit(cardB);
 		$("#cards").append("<img id='cardB'></img>");
-		$("#cardB").attr("src", "/images/CardBack.png");
+		$("#cardB").attr("src", "images/CardBack.png");
 		remainingCards--;
 		$("#highLowButtons").append("<button id='high'>HIGHER</button>")
 		$("#high").click(function() {
